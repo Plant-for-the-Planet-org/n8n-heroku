@@ -2,6 +2,9 @@ FROM n8nio/n8n:latest
 
 USER root
 
+RUN npm install @google/earthengine
+USER node
+
 WORKDIR /home/node/packages/cli
 ENTRYPOINT []
 
